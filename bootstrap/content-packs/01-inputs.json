@@ -1,0 +1,65 @@
+{
+    "v": 1,
+    "id": "ce4c4214-8d3e-4eeb-9aa4-1bb8afb3f362",
+    "rev": 1,
+    "name": "my inputs content pack",
+    "summary": "inputs i am used to have",
+    "description": "",
+    "vendor": "me",
+    "url": "",
+    "parameters": [],
+    "entities": [
+        {
+            "v": "1",
+            "type": {
+                "name": "input",
+                "version": "1"
+            },
+            "id": "a11baf30-365c-4286-ad67-d50ab0ca61e7",
+            "data": {
+                "title": {
+                    "@type": "string",
+                    "@value": "GELF UDP input"
+                },
+                "configuration": {
+                    "recv_buffer_size": {
+                        "@type": "integer",
+                        "@value": 262144
+                    },
+                    "port": {
+                        "@type": "integer",
+                        "@value": 12201
+                    },
+                    "number_worker_threads": {
+                        "@type": "integer",
+                        "@value": 4
+                    },
+                    "bind_address": {
+                        "@type": "string",
+                        "@value": "0.0.0.0"
+                    },
+                    "decompress_size_limit": {
+                        "@type": "integer",
+                        "@value": 8388608
+                    }
+                },
+                "static_fields": {},
+                "type": {
+                    "@type": "string",
+                    "@value": "org.graylog2.inputs.gelf.udp.GELFUDPInput"
+                },
+                "global": {
+                    "@type": "boolean",
+                    "@value": true
+                },
+                "extractors": []
+            },
+            "constraints": [
+                {
+                    "type": "server-version",
+                    "version": ">=3.3.5+6436f1b"
+                }
+            ]
+        }
+    ]
+}
